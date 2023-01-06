@@ -72,21 +72,33 @@
 					</span>
 				</div>
 				<div class="mobile_menu_list_wrap">
-					<ul>
-						<li><a href="#">HOTELS & RESORTS</a></li>
-						<li><a href="#">DEALS</a></li>
-						<li><a href="#">ORIGINAL EXPERIENCES</a></li>
-						<li><a href="#">CULTURE</a></li>
-						<li><a href="#">GALLERY</a></li>
-						<li><a href="#">STORE</a></li>
-						<li><a href="#">ABOUT US</a></li>
-					</ul>
+                    <div class="m_member_wrap">
+                        <ul>
+                            <li><a href="#">JOIN US</a></li>
+                            <li><a href="#">LOG IN</a></li>
+                            <li><a href="#">CART</a></li>
+                            <li><a href="#">MY PAGE</a></li>
+                            <li><a href="#">ORDER</a></li>
+                        </ul>
+                    </div>
+                    <div class="m_menu_wrap">
+                        <ul>
+                            <li><a href="#">JOIN US</a></li>
+                            <li><a href="#">LOG IN</a></li>
+                            <li><a href="#">CART</a></li>
+                            <li><a href="#">MY PAGE</a></li>
+                            <li><a href="#">ORDER</a></li>
+                        </ul>
+                    </div>
+                    <div class="m_nqr_wrap">
+                        <ul>
+                            <li><a href="#">NEWS</a></li>
+                            <li><a href="#">Q&A</a></li>
+                            <li><a href="#">REVIEW</a></li>
+                        </ul>
+                    </div>
 				</div>
 				<div class="mobile_menu_footer">
-					<p>
-						Become a member <br>
-						to enjoy the best benefits!
-					</p>
 					<div class="mobile_menu_footer_button">
 						<button>JOIN</button>
 						<button>LOGIN</button>
@@ -160,10 +172,10 @@
                     <div class="title_logo">
                         <h1 class="ir_pm">I hate monday</h1>
                         <div class="web_header_logo"><img src="./img/header_logo.png" alt=""></div>
-                        <div class="mobile_header_logo"><img src="./img/r_logo.jpg" alt=""></div>
+                        <div class="mobile_header_logo"><img src="./img/r_logo-removebg.png" alt=""></div>
                     </div>
                     <div class="menu_list">
-                        <ul>
+                        <ul class="menu_js">
                             <li><a href="#">ABOUT</a></li>
                             <li>
                                 <a href="#">SHOP</a>
@@ -189,17 +201,31 @@
     <main id="main">
         <section class="sec_1">
             <div class="slide_banner">
-                <ul>
-                    <li>
-                        <a href="#"><img src="./img/mainBanner1.jpeg" alt="main slide image 1"></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="./img/mainBanner2.jpg" alt="main slide image 2"></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="./img/mainBanner3.jpeg" alt="main slide image 3"></a>
-                    </li>
-                </ul>
+                <div class="slideshow-container">
+                    <div class="mySlideDiv fade active">
+                        <a href="#"><img src="./img/mainBanner1.jpeg"></a>
+                    </div>
+                    <div class="mySlideDiv fade">
+                        <a href="#"><img src="./img/mainBanner2.jpg"></a>
+                    </div>
+                    <div class="mySlideDiv fade">
+                        <a href="#"><img src="./img/mainBanner3.jpeg"></a>
+                    </div>
+                    <a class="prev" onclick="prevSlide()"><img src="./img/arr_left.png" alt="prev btn"></a>
+                    <a class="next" onclick="nextSlide()"><img src="./img/arr_right.png" alt="next btn"></a>
+                </div>
+            </div>
+            <div class="m_slide_banner">
+                <div class="slideshow-container">
+                    <div class="mySlideDiv fade active">
+                        <a href="#"><img src="./img/m_main_banner1.jpg"></a>
+                    </div>
+                    <div class="mySlideDiv fade">
+                        <a href="#"><img src="./img/m_main_banner2.jpg"></a>
+                    </div>
+                    <a class="prev" onclick="prevSlide()"><img src="./img/arr_left.png" alt="prev btn"></a>
+                    <a class="next" onclick="nextSlide()"><img src="./img/arr_right.png" alt="next btn"></a>
+                </div>
             </div>
         </section>
         <section class="sec_2"></section>

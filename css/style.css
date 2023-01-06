@@ -11,129 +11,18 @@ body {
 
 .inner {
   max-width: 1600px;
-  background: rgba(255, 188, 188, 0.3);
+  background: rgba(255, 188, 188, 0);
   margin: 0 auto;
   height: inherit;
-}
-
-.mobile_menu_list {
-  position: fixed;
-  display: block;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  z-index: 99999;
-}
-.mobile_menu_list .container {
-  padding: 0 30px;
-}
-.mobile_menu_list .container .mobile_menu_bar {
-  display: flex;
-  justify-content: space-between;
-  height: 68px;
-  align-items: center;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-}
-.mobile_menu_list .container .mobile_menu_bar .moda_logoBt_wrap {
-  width: 24px;
-  height: 24px;
-  display: block;
-}
-.mobile_menu_list .container .mobile_menu_bar .moda_logoBt_wrap a {
-  display: block;
-}
-.mobile_menu_list .container .mobile_menu_bar .moda_logoBt_wrap a img {
-  width: 100%;
-}
-.mobile_menu_list .container .mobile_menu_bar .mobile_appBar_wrap {
-  width: 22px;
-  height: 14px;
-  display: block;
-}
-.mobile_menu_list .container .mobile_menu_bar .mobile_appBar_wrap a {
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.mobile_menu_list .container .mobile_menu_bar .mobile_appBar_wrap a i {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background: #fff;
-  top: 50%;
-  margin-top: -1px;
-}
-.mobile_menu_list .container .mobile_menu_list_wrap {
-  width: 100%;
-}
-.mobile_menu_list .container .mobile_menu_list_wrap ul {
-  width: 100%;
-}
-.mobile_menu_list .container .mobile_menu_list_wrap ul li {
-  padding: 10px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-}
-.mobile_menu_list .container .mobile_menu_list_wrap ul li a {
-  color: #000;
-  font-size: 16px;
-}
-.mobile_menu_list .container .mobile_menu_list_wrap ul li a:hover {
-  color: rebeccapurple;
-}
-.mobile_menu_list .container .mobile_menu_footer p {
-  color: #000;
-  font-size: 16px;
-  padding-top: 20px;
-  line-height: 140%;
-  font-weight: 500;
-}
-.mobile_menu_list .container .mobile_menu_footer .mobile_menu_footer_button {
-  margin-top: 20px;
-}
-.mobile_menu_list .container .mobile_menu_footer .mobile_menu_footer_button button {
-  background: rgb(187, 166, 166);
-  padding: 0 30px;
-  height: 48px;
-  color: #000;
-}
-.mobile_menu_list .container .mobile_menu_footer .mobile_menu_footer_button button:hover {
-  color: rebeccapurple;
-}
-.mobile_menu_list .container .mobile_menu_footer .mobile_menu_footer_sns {
-  margin-top: 20px;
-}
-.mobile_menu_list .container .mobile_menu_footer .mobile_menu_footer_sns span {
-  display: inline-block;
-  margin: 0 4px;
-}
-.mobile_menu_list .container .mobile_menu_footer .mobile_menu_footer_sns span a {
-  width: 27px;
-  height: 27px;
-  display: block;
-  border-radius: 50%;
-  background: #aaa;
-  text-align: center;
-  transition: 0.3s;
-}
-.mobile_menu_list .container .mobile_menu_footer .mobile_menu_footer_sns span a:hover {
-  background: #fff;
-}
-.mobile_menu_list .container .mobile_menu_footer .mobile_menu_footer_sns span a i {
-  display: block;
-  color: #000;
-  font-size: 15px;
-  line-height: 27px;
 }
 
 .mobile_menu {
   width: 100%;
   height: 4em;
-  background: rgb(161, 95, 231);
+  background: #fff;
   display: none;
+  position: fixed;
+  z-index: 99999;
 }
 .mobile_menu .m_header_wrap {
   display: flex;
@@ -152,11 +41,194 @@ body {
   width: 25px;
   height: 30px;
 }
+.mobile_menu .mobile_menu_list {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 99999;
+}
+.mobile_menu .mobile_menu_list .container {
+  padding: 0 30px;
+}
+.mobile_menu .mobile_menu_list .container .mobile_menu_bar {
+  display: flex;
+  justify-content: space-between;
+  height: 68px;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.mobile_menu .mobile_menu_list .container .mobile_menu_bar .moda_logoBt_wrap {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+.mobile_menu .mobile_menu_list .container .mobile_menu_bar .moda_logoBt_wrap a {
+  display: block;
+}
+.mobile_menu .mobile_menu_list .container .mobile_menu_bar .moda_logoBt_wrap a img {
+  width: 100%;
+}
+.mobile_menu .mobile_menu_list .container .mobile_menu_bar .mobile_appBar_wrap {
+  width: 22px;
+  height: 14px;
+  display: block;
+}
+.mobile_menu .mobile_menu_list .container .mobile_menu_bar .mobile_appBar_wrap a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.mobile_menu .mobile_menu_list .container .mobile_menu_bar .mobile_appBar_wrap a i {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  top: 50%;
+  margin-top: -1px;
+}
+.mobile_menu .mobile_menu_list .container .mobile_menu_list_wrap {
+  width: 100%;
+}
+.mobile_menu .mobile_menu_list .container .mobile_menu_list_wrap .m_member_wrap {
+  padding: 20px 0 10px;
+}
+.mobile_menu .mobile_menu_list .container .mobile_menu_list_wrap .m_member_wrap > ul > li > a {
+  color: rgb(119, 119, 119);
+}
+.mobile_menu .mobile_menu_list .container .mobile_menu_list_wrap .m_menu_wrap {
+  padding: 10px 0;
+}
+.mobile_menu .mobile_menu_list .container .mobile_menu_list_wrap .m_menu_wrap > ul > li > a {
+  font-size: 16px;
+}
+.mobile_menu .mobile_menu_list .container .mobile_menu_list_wrap .m_nqr_wrap {
+  padding: 10px 0;
+}
+.mobile_menu .mobile_menu_list .container .mobile_menu_list_wrap .m_nqr_wrap > ul > li > a {
+  font-size: 16px;
+}
+.mobile_menu .mobile_menu_list .container .mobile_menu_footer p {
+  color: #000;
+  font-size: 16px;
+  padding-top: 20px;
+  line-height: 140%;
+  font-weight: 500;
+}
+.mobile_menu .mobile_menu_list .container .mobile_menu_footer .mobile_menu_footer_button {
+  margin-top: 20px;
+}
+.mobile_menu .mobile_menu_list .container .mobile_menu_footer .mobile_menu_footer_button button {
+  background: rgb(187, 166, 166);
+  padding: 0 30px;
+  height: 48px;
+  color: #000;
+}
+.mobile_menu .mobile_menu_list .container .mobile_menu_footer .mobile_menu_footer_button button:hover {
+  color: rebeccapurple;
+}
+.mobile_menu .mobile_menu_list .container .mobile_menu_footer .mobile_menu_footer_sns {
+  margin-top: 20px;
+}
+.mobile_menu .mobile_menu_list .container .mobile_menu_footer .mobile_menu_footer_sns span {
+  display: inline-block;
+  margin: 0 4px;
+}
+.mobile_menu .mobile_menu_list .container .mobile_menu_footer .mobile_menu_footer_sns span a {
+  width: 27px;
+  height: 27px;
+  display: block;
+  border-radius: 50%;
+  background: #aaa;
+  text-align: center;
+  transition: 0.3s;
+}
+.mobile_menu .mobile_menu_list .container .mobile_menu_footer .mobile_menu_footer_sns span a:hover {
+  background: #fff;
+}
+.mobile_menu .mobile_menu_list .container .mobile_menu_footer .mobile_menu_footer_sns span a i {
+  display: block;
+  color: #000;
+  font-size: 15px;
+  line-height: 27px;
+}
 
 #header {
   display: block;
   width: 100%;
   min-height: 120px;
+  position: fixed;
+  top: 0;
+}
+#header.shrink {
+  z-index: 99999;
+}
+#header.shrink .top_bar {
+  display: none;
+}
+#header.shrink .menu_bar {
+  height: 50px;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 2px 8px rgba(150, 150, 150, 0.5);
+  transition: 0.5s ease-in-out;
+}
+#header.shrink .menu_bar .inner .menu_wrap .menu_list > ul {
+  line-height: 50px;
+  transition: 0.5s;
+}
+#header.shrink .menu_bar .inner .menu_wrap .menu_list > ul > li > a {
+  font-size: 1.1em;
+}
+#header.shrink .menu_bar .inner .menu_wrap .menu_list > ul > li:hover::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #000;
+  top: 8px;
+  left: 50%;
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+#header.shrink .menu_bar .inner .menu_wrap .menu_list > ul > li .shop_2dep {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 50px;
+  left: -13px;
+  width: 120px;
+  height: 200px;
+  line-height: 24px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 15px 20px;
+  box-shadow: 0 0 10px #ddd;
+}
+#header.shrink .menu_bar .inner .menu_wrap .menu_list > ul > li .shop_2dep li a {
+  color: rgb(166, 166, 166);
+  font-size: 14px;
+}
+#header.shrink .menu_bar .inner .menu_wrap .menu_list > ul > li .shop_2dep li:hover a {
+  color: #000;
+  transition: 0.8s;
+}
+#header.shrink .menu_bar .inner .menu_wrap .title_logo .web_header_logo img {
+  left: 50px;
+  top: 26%;
+  width: 100px;
+  height: 19px;
+  transition: 0.5s;
+}
+#header.shrink .menu_bar .inner .menu_wrap .title_logo .mobile_header_logo img {
+  left: 50px;
+  top: 20%;
+  width: 30px;
+  height: 30px;
+  transition: 0.5s;
 }
 #header .top_bar {
   height: 40px;
@@ -301,25 +373,29 @@ body {
   z-index: 10;
   width: 100%;
   height: 80px;
+  background: #fff;
+  transition: 0.5s;
 }
 #header .menu_bar .inner .menu_wrap {
   height: 100%;
   position: relative;
 }
-#header .menu_bar .inner .menu_wrap .title_logo .web_header_logo {
+#header .menu_bar .inner .menu_wrap .title_logo .web_header_logo img {
   position: absolute;
   left: 20px;
   top: 31%;
-  width: 150px;
-  height: 40px;
+  width: 125px;
+  height: 24px;
+  transition: 0.5s;
 }
-#header .menu_bar .inner .menu_wrap .title_logo .mobile_header_logo {
+#header .menu_bar .inner .menu_wrap .title_logo .mobile_header_logo img {
   display: none;
   position: absolute;
   left: 30px;
-  top: 23%;
+  top: 22%;
   width: 40px;
   height: 40px;
+  transition: 0.5s;
 }
 #header .menu_bar .inner .menu_wrap .menu_list {
   margin: 0 auto;
@@ -330,9 +406,11 @@ body {
   justify-content: center;
   line-height: 80px;
   width: 750px;
+  transition: 0.5s;
 }
 #header .menu_bar .inner .menu_wrap .menu_list > ul > li {
   position: relative;
+  z-index: 1;
   text-align: center;
 }
 #header .menu_bar .inner .menu_wrap .menu_list > ul > li > a {
@@ -359,7 +437,8 @@ body {
 #header .menu_bar .inner .menu_wrap .menu_list > ul > li .shop_2dep {
   display: none;
   position: absolute;
-  top: 65px;
+  z-index: 2;
+  top: 80px;
   left: -13px;
   width: 120px;
   height: 200px;
@@ -379,6 +458,7 @@ body {
 
 #main {
   width: 100%;
+  margin-top: 150px;
 }
 #main section {
   width: 100%;
@@ -386,7 +466,73 @@ body {
 #main .sec_1 {
   width: 100%;
   height: 850px;
+  background-color: red;
 }
-#main .sec_1 .slide_banner {
-  width: 100%;
+#main .sec_1 .slide_banner .slideshow-container {
+  position: relative;
+}
+#main .sec_1 .slide_banner .slideshow-container .mySlideDiv a img {
+  max-width: 100%;
+}
+#main .sec_1 .slide_banner .slideshow-container .prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 3%;
+  height: 66px;
+  overflow: hidden;
+}
+#main .sec_1 .slide_banner .slideshow-container .prev img {
+  max-width: 100%;
+  height: auto;
+}
+#main .sec_1 .slide_banner .slideshow-container .next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 3%;
+  height: 66px;
+  overflow: hidden;
+}
+#main .sec_1 .slide_banner .slideshow-container .next img {
+  max-width: 100%;
+  height: auto;
+}
+#main .sec_1 .m_slide_banner {
+  display: none;
+  margin-top: 52px;
+}
+#main .sec_1 .m_slide_banner .slideshow-container {
+  position: relative;
+}
+#main .sec_1 .m_slide_banner .slideshow-container .mySlideDiv a img {
+  max-width: 100%;
+}
+#main .sec_1 .m_slide_banner .slideshow-container .prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 3%;
+  height: 66px;
+  overflow: hidden;
+}
+#main .sec_1 .m_slide_banner .slideshow-container .prev img {
+  max-width: 100%;
+  height: auto;
+}
+#main .sec_1 .m_slide_banner .slideshow-container .next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 3%;
+  height: 66px;
+  overflow: hidden;
+}
+#main .sec_1 .m_slide_banner .slideshow-container .next img {
+  max-width: 100%;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */
