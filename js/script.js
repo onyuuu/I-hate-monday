@@ -25,21 +25,21 @@ function getCurrentScroll(){
 }
 
 
-//mobile slide banner
+//slide banner
 $(document).ready(function () {
-	$(".mySlideDiv").not(".active").hide(); //화면 로딩 후 첫번째 div를 제외한 나머지 숨김
+	$(".SlideDiv").not(".active").hide(); //화면 로딩 후 첫번째 div를 제외한 나머지 숨김
 	
 	setInterval(nextSlide, 4000); //4초(4000)마다 다음 슬라이드로 넘어감
 });
 
 //이전 슬라이드
 function prevSlide() {
-	$(".mySlideDiv").hide(); //모든 div 숨김
-	var allSlide = $(".mySlideDiv"); //모든 div 객체를 변수에 저장
+	$(".SlideDiv").hide(); //모든 div 숨김
+	var allSlide = $(".SlideDiv"); //모든 div 객체를 변수에 저장
 	var currentIndex = 0; //현재 나타난 슬라이드의 인덱스 변수
 	
 	//반복문으로 현재 active클래스를 가진 div를 찾아 index 저장
-	$(".mySlideDiv").each(function(index,item){ 
+	$(".SlideDiv").each(function(index,item){ 
 		if($(this).hasClass("active")) {
 			currentIndex = index;
 		}
@@ -58,21 +58,21 @@ function prevSlide() {
 	}
 
 	//모든 div에서 active 클래스 제거
-	$(".mySlideDiv").removeClass("active");
+	$(".SlideDiv").removeClass("active");
     
 	//새롭게 지정한 index번째 슬라이드에 active 클래스 부여 후 show()
-	$(".mySlideDiv").eq(newIndex).show(1000).addClass("active");
-/* 	$(".mySlideDiv").eq(newIndex).show(1000); */
+	$(".SlideDiv").eq(newIndex).show(1000).addClass("active");
+/* 	$(".SlideDiv").eq(newIndex).show(1000); */
 
 }
 
 //다음 슬라이드
 function nextSlide() {
-	$(".mySlideDiv").hide();
-	var allSlide = $(".mySlideDiv");
+	$(".SlideDiv").hide();
+	var allSlide = $(".SlideDiv");
 	var currentIndex = 0;
 	
-	$(".mySlideDiv").each(function(index,item){
+	$(".SlideDiv").each(function(index,item){
 		if($(this).hasClass("active")) {
 			currentIndex = index;
 		}
@@ -89,26 +89,26 @@ function nextSlide() {
 		newIndex = currentIndex+1;
 	}
 
-	$(".mySlideDiv").removeClass("active");
-	$(".mySlideDiv").eq(newIndex).fadeIn(500).addClass("active");
-	/* $(".mySlideDiv").eq(newIndex).show(1000); */
+	$(".SlideDiv").removeClass("active");
+	$(".SlideDiv").eq(newIndex).fadeIn(500).addClass("active");
+	/* $(".SlideDiv").eq(newIndex).show(1000); */
 }
 
 
 $(document).ready(function () {
-	$(".mySlideDiv").not(".active").hide(); //화면 로딩 후 첫번째 div를 제외한 나머지 숨김
+	$(".SlideDiv").not(".active").hide(); //화면 로딩 후 첫번째 div를 제외한 나머지 숨김
 	
 	setInterval(nextSlide, 4000); //4초(4000)마다 다음 슬라이드로 넘어감
 });
 
 //이전 슬라이드
 function prevSlide() {
-	$(".mySlideDiv").hide(); //모든 div 숨김
-	var allSlide = $(".mySlideDiv"); //모든 div 객체를 변수에 저장
+	$(".SlideDiv").hide(); //모든 div 숨김
+	var allSlide = $(".SlideDiv"); //모든 div 객체를 변수에 저장
 	var currentIndex = 0; //현재 나타난 슬라이드의 인덱스 변수
 	
 	//반복문으로 현재 active클래스를 가진 div를 찾아 index 저장
-	$(".mySlideDiv").each(function(index,item){ 
+	$(".SlideDiv").each(function(index,item){ 
 		if($(this).hasClass("active")) {
 			currentIndex = index;
 		}
@@ -127,21 +127,21 @@ function prevSlide() {
 	}
 
 	//모든 div에서 active 클래스 제거
-	$(".mySlideDiv").removeClass("active");
+	$(".SlideDiv").removeClass("active");
     
 	//새롭게 지정한 index번째 슬라이드에 active 클래스 부여 후 show()
-	$(".mySlideDiv").eq(newIndex).show(1000).addClass("active");
-/* 	$(".mySlideDiv").eq(newIndex).show(1000); */
+	$(".SlideDiv").eq(newIndex).show(1000).addClass("active");
+/* 	$(".SlideDiv").eq(newIndex).show(1000); */
 
 }
 
 //다음 슬라이드
 function nextSlide() {
-	$(".mySlideDiv").hide();
-	var allSlide = $(".mySlideDiv");
+	$(".SlideDiv").hide();
+	var allSlide = $(".SlideDiv");
 	var currentIndex = 0;
 	
-	$(".mySlideDiv").each(function(index,item){
+	$(".SlideDiv").each(function(index,item){
 		if($(this).hasClass("active")) {
 			currentIndex = index;
 		}
@@ -158,7 +158,8 @@ function nextSlide() {
 		newIndex = currentIndex+1;
 	}
 
-	$(".mySlideDiv").removeClass("active");
-	$(".mySlideDiv").eq(newIndex).fadeIn(500).addClass("active");
-	/* $(".mySlideDiv").eq(newIndex).show(1000); */
+	$(".SlideDiv").removeClass("active");
+	$(".SlideDiv").eq(newIndex).fadeIn(500).addClass("active");
+	/* $(".SlideDiv").eq(newIndex).show(1000); */
 }
+

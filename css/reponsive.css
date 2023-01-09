@@ -4,6 +4,8 @@
     #header .menu_bar .inner .menu_wrap .title_logo .web_header_logo img{display: none;}
     #header .menu_bar .inner .menu_wrap .title_logo .mobile_header_logo img{display: block;}
     #header .menu_bar .inner .menu_wrap .menu_list>ul>li>a{font-size: 1.2em;}
+
+    
 }
 
 @media screen and (max-width: 1000px) {
@@ -27,6 +29,9 @@
         padding: 10px 20px;
         top: 50px;
     }
+
+    #main .sec_1 .sec1_textWrap .sec1_text1 strong{font-size: 1.1em}
+    #main .sec_1 .sec1_textWrap .sec1_text2 p{font-size: 1.1em; letter-spacing:  -.09em};
 }
 
 @media screen and (max-width: 810px) {
@@ -41,9 +46,10 @@
     }
     #header .menu_bar .inner .menu_wrap .menu_list>ul>li>.shop_2dep li a{font-size: 13px;}
 
-    #main{margin-top: 0;}
-    #main .sec_1 .slide_banner{display: none;}
-    #main .sec_1 .m_slide_banner{display: block;}
+    #main{margin-top: 100px; background: rebeccapurple;}
 
+    #main .sec_1 .sec1_textWrap{padding: 1.8%;}
+    #main .sec_1 .sec1_textWrap .sec1_text1 strong{font-size: 1em}
+    #main .sec_1 .sec1_textWrap .sec1_text2 p{font-size: 0.99em; letter-spacing:  -.09em};
 
 }
