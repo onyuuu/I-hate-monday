@@ -5,7 +5,8 @@
     #header .menu_bar .inner .menu_wrap .title_logo .mobile_header_logo img{display: block;}
     #header .menu_bar .inner .menu_wrap .menu_list>ul>li>a{font-size: 1.2em;}
 
-    
+    #main .sec_3 .sec3_item_wrap > ul > li{padding-bottom: 40px;}
+    #main .sec_3 .sec3_item_wrap > ul > li > a .description_wrap .des_tit{font-size: 1.1em;}
 }
 
 @media screen and (max-width: 1000px) {
@@ -31,7 +32,10 @@
     }
 
     #main .sec_1 .sec1_textWrap .sec1_text1 strong{font-size: 1.1em}
-    #main .sec_1 .sec1_textWrap .sec1_text2 p{font-size: 1.1em; letter-spacing:  -.09em};
+    #main .sec_1 .sec1_textWrap .sec1_text2 p{font-size: 1.1em; letter-spacing:  -.09em}
+
+    #main .sec_2 .inner ul li p{font-size: 1.4em}
+    #main .sec_2 .inner ul li span{display: block; font-size: 1em;}
 }
 
 @media screen and (max-width: 810px) {
@@ -46,10 +50,19 @@
     }
     #header .menu_bar .inner .menu_wrap .menu_list>ul>li>.shop_2dep li a{font-size: 13px;}
 
-    #main{margin-top: 100px; background: rebeccapurple;}
+    #main{margin-top: 100px}
 
     #main .sec_1 .sec1_textWrap{padding: 1.8%;}
     #main .sec_1 .sec1_textWrap .sec1_text1 strong{font-size: 1em}
-    #main .sec_1 .sec1_textWrap .sec1_text2 p{font-size: 0.99em; letter-spacing:  -.09em};
+    #main .sec_1 .sec1_textWrap .sec1_text2 p{font-size: 0.99em; letter-spacing:  -.09em}
+    
+    #main .sec_2{display: none}
+    #main .m_sec_2{display: block; background: rgb(255, 201, 201);}
+    #main .m_sec_2 ul li p{font-size: 1.4em;}
+    #main .m_sec_2 ul li span{font-size: 1em;}
+}
 
+@media screen and (max-width: 700px) {
+    #main .m_sec_2 ul li span{display: block;}
+    
 }

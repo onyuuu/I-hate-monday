@@ -1,12 +1,11 @@
 /* @import url('response.css'); */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+KR&display=swap");
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
-  height: auto;
+  font-family: "Montserrat", "Noto Sans KR", sans-serif;
 }
 
 .inner {
@@ -465,7 +464,8 @@ body {
 }
 #main .sec_1 {
   width: 100%;
-  height: 1200px;
+  height: auto;
+  overflow: hidden;
   /* .m_slide_banner{
       display: none;
       margin-top: 52px;
@@ -505,6 +505,9 @@ body {
       }
   } */
 }
+#main .sec_1 .slide_banner {
+  text-align: center;
+}
 #main .sec_1 .slide_banner .slideshow-container {
   position: relative;
 }
@@ -519,6 +522,7 @@ body {
   width: 3%;
   height: 66px;
   overflow: hidden;
+  cursor: pointer;
 }
 #main .sec_1 .slide_banner .slideshow-container .prev img {
   max-width: 100%;
@@ -532,6 +536,7 @@ body {
   width: 3%;
   height: 66px;
   overflow: hidden;
+  cursor: pointer;
 }
 #main .sec_1 .slide_banner .slideshow-container .next img {
   max-width: 100%;
@@ -540,14 +545,15 @@ body {
 #main .sec_1 .sec1_textWrap {
   text-align: center;
   padding: 50px 0;
-  background: #fff;
 }
 #main .sec_1 .sec1_textWrap .sec1_text1 {
   padding: 2% 0;
+  -webkit-animation: fadeInRight 1.5s;
+          animation: fadeInRight 1.5s;
 }
-#main .sec_1 .sec1_textWrap .sec1_text1 strong {
-  display: block;
+#main .sec_1 .sec1_textWrap .sec1_text1 p {
   font-size: 1.2em;
+  font-weight: bold;
 }
 #main .sec_1 .sec1_textWrap .sec1_text2 {
   padding-bottom: 2em;
@@ -560,27 +566,181 @@ body {
 }
 #main .sec_2 {
   width: 100%;
-  height: 580px;
-  background-color: aquamarine;
+  height: auto;
 }
 #main .sec_2 .inner {
   width: 100%;
-  background: red;
 }
 #main .sec_2 .inner ul {
-  width: 100%;
   display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
 }
 #main .sec_2 .inner ul li {
-  width: 100%;
-}
-#main .sec_2 .inner ul li a {
-  width: 3;
+  text-align: center;
 }
 #main .sec_2 .inner ul li a img {
   max-width: 100%;
+  display: block;
+}
+#main .sec_2 .inner ul li p {
+  font-weight: 400;
+  font-size: 1.6em;
+  padding: 20px 0 10px;
+}
+#main .sec_2 .inner ul li span {
+  color: #aaa;
+}
+#main .m_sec_2 {
+  width: 100%;
+  display: none;
+}
+#main .m_sec_2 ul {
+  width: 100%;
+  padding-bottom: 30px;
+}
+#main .m_sec_2 ul li {
+  width: 100%;
+  text-align: center;
+}
+#main .m_sec_2 ul li a {
+  width: 100%;
+}
+#main .m_sec_2 ul li a img {
+  display: block;
+  width: 100vw;
+}
+#main .m_sec_2 ul li p {
+  font-size: 1.6em;
+  padding: 20px 0 5px;
+  letter-spacing: -0.8px;
+}
+#main .m_sec_2 ul li span {
+  color: #aaa;
+}
+#main .m_sec_2 ul:nth-child(2) {
+  display: flex;
+  flex-basis: 50%;
+}
+#main .m_sec_2 ul:nth-child(2) li a img {
+  max-width: 100%;
+}
+#main .m_sec_2 ul:nth-child(2) li p {
+  font-size: 1.3em;
+}
+#main .sec_3 {
+  margin: 130px 0 20px;
+  text-align: center;
+}
+#main .sec_3 .sec3_tit_wrap {
+  text-align: center;
+}
+#main .sec_3 .sec3_tit_wrap h2 {
+  font-size: 2em;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+}
+#main .sec_3 .sec3_tit_wrap h2::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 2px;
+  background: #000;
+}
+#main .sec_3 .sec3_tit_wrap p {
+  margin: 40px 0;
+  font-size: 1.1em;
+  color: #aaa;
+}
+#main .sec_3 .sec3_item_wrap {
+  margin: 0 auto;
+  max-width: 1700px;
+}
+#main .sec_3 .sec3_item_wrap > ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+#main .sec_3 .sec3_item_wrap > ul > li {
+  flex-basis: 23%;
+  padding-bottom: 50px;
+}
+#main .sec_3 .sec3_item_wrap > ul > li > a .img_wrap {
+  overflow: hidden;
+  position: relative;
+}
+#main .sec_3 .sec3_item_wrap > ul > li > a .img_wrap > img {
+  max-width: 100%;
+}
+#main .sec_3 .sec3_item_wrap > ul > li > a .img_wrap .sale {
+  position: absolute;
+  bottom: 20px;
+  right: 15px;
+  width: 35px;
+  height: 35px;
+  background: #000;
+  border-radius: 50%;
+}
+#main .sec_3 .sec3_item_wrap > ul > li > a .img_wrap .sale span {
+  color: #fff;
+  font-size: 0.95em;
+  -webkit-animation: blink 1.5s infinite;
+          animation: blink 1.5s infinite;
+  line-height: 35px;
+}
+#main .sec_3 .sec3_item_wrap > ul > li > a .description_wrap .des_tit {
+  font-weight: bold;
+  font-size: 1.25em;
+  padding: 10px 0;
+  height: 60px;
+  line-height: 18px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main .sec_3 .sec3_item_wrap > ul > li > a .description_wrap .des_tit::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: rgb(230, 230, 230);
+}
+#main .sec_3 .sec3_item_wrap > ul > li > a .description_wrap .des_text {
+  color: #aaa;
+  padding: 12px 0 0;
+}
+#main .sec_3 .sec3_item_wrap > ul > li > a .description_wrap .des_price {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+#main .sec_3 .sec3_item_wrap > ul > li > a .description_wrap .des_price ul {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 8px 0;
+}
+#main .sec_3 .sec3_item_wrap > ul > li > a .description_wrap .des_price ul li {
+  font-weight: bold;
+  margin: 0 10px;
+}
+#main .sec_3 .sec3_item_wrap > ul > li > a .description_wrap .des_price ul li.price {
+  color: #aaa;
+  font-weight: normal;
+  text-decoration: line-through;
+  font-size: 0.9em;
+}
+#main .sec_4 {
+  background: red;
+  margin: 500px 0;
+  width: 100%;
+  height: 500px;
 }
 
 .fade {
@@ -601,6 +761,42 @@ body {
 @keyframes fade {
   from {
     opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes blink {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  from {
+    opacity: 0.5;
   }
   to {
     opacity: 1;
