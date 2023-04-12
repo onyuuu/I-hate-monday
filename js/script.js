@@ -93,3 +93,63 @@ function nextSlide() {
 	$(".SlideDiv").eq(newIndex).fadeIn(500).addClass("active");
 	/* $(".SlideDiv").eq(newIndex).show(1000); */
 }
+
+
+
+//mobile load more
+$( document ).ready(function () {
+    $(".moreBox").slice(-1,1).show();
+        if ($(".itemBox:hidden").length != 0) {
+        $("#loadMore").show();
+        }   
+        $("#loadMore").on('click', function (e) {
+        e.preventDefault();
+        $(".moreBox:hidden").slice(0, 6).slideDown();
+        if ($(".moreBox:hidden").length == 0) {
+            $("#loadMore").fadeOut('slow');
+        }
+        });
+});
+
+
+// sec1 animation fadeInRight
+const txtT=$('.sec_1 .sec1_textWrap .sec1_text1').offset().top;
+let winH=$(window).height();
+let txtTop=txtT-winH;
+
+$(window).scroll(function(){
+	if($(window).scrollTop() > txtTop){
+		$('.sec1_text1').addClass('addParallax');
+	};
+	if($(window).scrollTop() == 0){
+		$('.sec1_text1').removeClass('addParallax');
+	};
+});
+
+// sec2 animation ani1
+const ani1=$('.sec_2 .inner ul .aniJs').offset().top;
+let winHt=$(window).height();
+let ani1Top=ani1-winHt;
+
+$(window).scroll(function(){
+	if($(window).scrollTop() > ani1Top){
+		$('.aniJs').addClass('addParallax');
+	};
+	if($(window).scrollTop() == 0){
+		$('.aniJs').removeClass('addParallax');
+	};
+});
+
+
+
+//모바일메뉴 SHOP 토글
+$(".m_menu_wrap>ul>li a img").click(function(){
+	$(".m_menu_wrap>ul>li>ul").toggle();
+});
+
+let toggleImg=true;
+function toggleBtn(){
+	document.getElementById('toggle').src=toggleImg?'./img/plus_click.png' :
+	'./img/plus.png';
+	toggleImg=!toggleImg;
+};

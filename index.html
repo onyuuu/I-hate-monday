@@ -44,8 +44,8 @@
 <body>
 	<ul id="skip">
 		<li><a href="#header">헤더 바로가기</a></li>
-		<li><a href="#nav">메뉴 바로가기</a></li>
-		<li><a href="#content">내용 바로가기</a></li>
+		<li><a href="#menu_bar">메뉴 바로가기</a></li>
+		<li><a href="#main">내용 바로가기</a></li>
 	</ul>
 
     <div class="mobile_menu">
@@ -85,11 +85,24 @@
                     </div>
                     <div class="m_menu_wrap">
                         <ul>
-                            <li><a href="#">JOIN US</a></li>
-                            <li><a href="#">LOG IN</a></li>
-                            <li><a href="#">CART</a></li>
-                            <li><a href="#">MY PAGE</a></li>
-                            <li><a href="#">ORDER</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                            <li>
+                                <a href="#" class="m_shop">
+                                    <span>SHOP</span>
+                                    <img src="./img/plus.png" id="toggle" alt="plus icon" onclick="toggleBtn()">
+                                </a>
+                                <ul>
+                                    <li><a href="#">Socks</a></li>
+                                    <li><a href="#">Set</a></li>
+                                    <li><a href="#">Stocking</a></li>
+                                    <li><a href="#">Clothes</a></li>
+                                    <li><a href="#">Towel</a></li>
+                                    <li><a href="#">Acc</a></li>
+                                    <li><a href="#">Package</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">COLLABORATION</a></li>
+                            <li><a href="#">LOOKBOOK</a></li>
                         </ul>
                     </div>
                     <div class="m_nqr_wrap">
@@ -99,20 +112,10 @@
                             <li><a href="#">REVIEW</a></li>
                         </ul>
                     </div>
-				</div>
-				<div class="mobile_menu_footer">
-					<div class="mobile_menu_footer_button">
-						<button>JOIN</button>
-						<button>LOGIN</button>
-						<button>SUBSCRIBE</button>
-					</div>
-					<div class="mobile_menu_footer_sns">
-						<span><a href="#"><i class="fab fa-instagram"></i></a></span>
-						<span><a href="#"><i class="fab fa-facebook-f"></i></a></span>
-						<span><a href="#"><i class="fab fa-pinterest-p"></i></a></span>
-						<span><a href="#"><i class="fab fa-twitter"></i></a></span>
-						<span><a href="#"><i class="fab fa-youtube"></i></a></span>
-					</div>
+                    <div class="m_language">
+                        <a href="#"><img src="./img/ko_KR_32x24.png" alt="모바일 언어 한국어"></a>
+                        <a href="#"><img src="./img/en_US_32x24.png" alt="모바일 언어 영어"></a>
+                    </div>
 				</div>
 			</div>
 		</div>
@@ -131,15 +134,16 @@
                                 COMMUNITY
                             </a>
                             <ul class="community_2dep">
-                                <li><a href="#">NEWS</a></li>
+                                <li><a href="#">NOTICE</a></li>
                                 <li><a href="#">Q&A</a></li>
                                 <li><a href="#">REVIEW</a></li>
-                                <li><a href="#">EVENT</a></li>
                             </ul>
                         </li>
                         <li class="language">
                             <a href="#">
                                 <img src="./img/ko_KR_32x24.png" alt="korea language icon">
+                            </a>
+                            <a href="#">
                                 <img src="./img/en_US_32x24.png" alt="english language icon">
                             </a>
                         </li>
@@ -168,13 +172,13 @@
                 </div>
             </div>
         </div>
-        <div class="menu_bar">
+        <div class="menu_bar" id="menu_bar">
             <div class="inner">
                 <div class="menu_wrap">
                     <div class="title_logo">
                         <h1 class="ir_pm">I hate monday</h1>
-                        <div class="web_header_logo"><img src="./img/header_logo.png" alt=""></div>
-                        <div class="mobile_header_logo"><img src="./img/r_logo-removebg.png" alt=""></div>
+                        <div class="web_header_logo"><a href="#"><img src="./img/header_logo.png" alt="web header logo"></a></div>
+                        <div class="mobile_header_logo"><a href="#"><img src="./img/r_logo-removebg.png" alt="mobile header logo"></a></div>
                     </div>
                     <div class="menu_list">
                         <ul class="menu_js">
@@ -231,17 +235,17 @@
         <section class="sec_2">
             <div class="inner">
                 <ul>
-                    <li>
+                    <li class="ani2 aniJs">
                         <a href="#"><img src="./img/sec2_img1.jpg" alt="image1"></a>
                         <p>i hate monday towl</p>
                         <span>우리의 수건이</span> <span>얇지 않은 도톰한 위로가 되었으면 합니다.</span>
                     </li>
-                    <li>
+                    <li class="ani1 aniJs">
                         <a href="#"><img src="./img/sec2_img2.jpg" alt="image2"></a>
                         <p>하나보다 더 저렴하게</p>
                         <span>ihatemonday에서 </span><span>준비한 세트 상품을 만나보세요!</span>
                     </li>
-                    <li>
+                    <li class="ani2 aniJs">
                         <a href="#"><img src="./img/sec2_img3.jpg" alt="image3"></a>
                         <p>PACKAGE</p>
                         <span>소중한 양말을 예쁘게 담아드려요.</span>
@@ -277,7 +281,7 @@
             </div>
             <div class="sec3_item_wrap">
                 <ul>
-                    <li>
+                    <li class="itemBox">
                         <a href="#">
                             <div class="img_wrap">
                                 <img src="./img/sec3_1.jpg" alt="item1">
@@ -293,15 +297,10 @@
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li class="itemBox">
                         <a href="#">
                             <div class="img_wrap">
                                 <img src="./img/sec3_2.jpg" alt="item2">
-                                <!-- <div class="item_hover_wrap">
-                                    <a href="#"><img src="./img/cart.png" alt="장바구니"></a>
-                                    <a href="#"><img src="./img/zoom.png" alt="확대보기"></a>
-                                    <a href="#"><img src="./img/pop.png" alt="새창보기"></a>
-                                </div> -->
                                 <div class="sale"><span>30%</span></div>
                             </div>
                             <div class="description_wrap">
@@ -315,15 +314,10 @@
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li class="itemBox">
                         <a href="#">
                             <div class="img_wrap">
                                 <img src="./img/sec3_3.jpg" alt="item3">
-                                <!-- <div class="item_hover_wrap">
-                                    <a href="#"><img src="./img/cart.png" alt="장바구니"></a>
-                                    <a href="#"><img src="./img/zoom.png" alt="확대보기"></a>
-                                    <a href="#"><img src="./img/pop.png" alt="새창보기"></a>
-                                </div> -->
                                 <div class="sale"><span>15%</span></div>
                             </div>
                             <div class="description_wrap">
@@ -337,20 +331,14 @@
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li class="itemBox">
                         <a href="#">
                             <div class="img_wrap">
                                 <img src="./img/sec3_4.jpg" alt="item4">
-                                <!-- <div class="item_hover_wrap">
-                                    <a href="#"><img src="./img/cart.png" alt="장바구니"></a>
-                                    <a href="#"><img src="./img/zoom.png" alt="확대보기"></a>
-                                    <a href="#"><img src="./img/pop.png" alt="새창보기"></a>
-                                </div>-->
                             </div>
                             <div class="description_wrap">
-                                <div class="des_tit">I HATE MONDAY GIFT PACKAGE<br>(1~2켤레용)</div>
+                                <div class="des_tit">I HATE MONDAY GIFT PACKAGE (1~2켤레용)</div>
                                 <div class="des_text">아이헤이트먼데이 선물용 패키지 입니다. 얇은 양말 2켤레, 두꺼운 양말 1켤레 정도 포장하시기에 좋습니다.</div>
-                                <div class="des_price"></div>
                                 <div class="des_price">
                                     <ul>
                                         <li>1,000 won</li>
@@ -359,7 +347,7 @@
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li class="moreBox itemBox">
                         <a href="#">
                             <div class="img_wrap">
                                 <img src="./img/sec3_5.jpg" alt="item5">
@@ -377,7 +365,7 @@
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li class="moreBox itemBox">
                         <a href="#">
                             <div class="img_wrap">
                                 <img src="./img/sec3_6.jpg" alt="item6">
@@ -394,7 +382,7 @@
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li class="moreBox itemBox">
                         <a href="#">
                             <div class="img_wrap">
                                 <img src="./img/sec3_7.jpg" alt="item7">
@@ -411,7 +399,7 @@
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li class="moreBox itemBox">
                         <a href="#">
                             <div class="img_wrap">
                                 <img src="./img/sec3_8.jpg" alt="item8">
@@ -430,14 +418,159 @@
                         </a>
                     </li>
                 </ul>
+                <div id="loadMore">
+                    <a href="#">더보기(1/2)</a>
+                </div>
             </div>
         </section>
-        <section class="sec_4"></section>
-        <section class="sec_5"></section>
-        <section class="sec_6"></section>
-        <section class="sec_7"></section>
+        <section class="sec_4">
+        </section>
+        <section class="sec_5">
+            <div class="contentsWrap">
+                <div class="sec5_tit_wrap">
+                    <h2>STORY</h2>
+                </div>
+                <div class="contents_box">
+                    <div class="conLeft">
+                        <a href="#"><img src="./img/main_section_5_banner_img1.jpg" alt="section5 image"></a>
+                    </div>
+                    <div class="conRight">
+                        <div class="conRight_text">
+                            <p>
+                                나는 월요일이 싫습니다.<br>
+                                아침에 일어나는 것도 밥먹는 것도 싫고 책 읽는 것도 싫고<br>
+                                자꾸 토요일로 시간을 되돌리고 싶습니다.<br><br>
+                                그래서 우리는 싫어하는 월요일에<br>
+                                생각만해도 기분 좋아지는 특별한 것을 만들기로 했습니다.<br>
+                                가장 중요한 이유<br>
+                                기분좋기<br>
+                                즐겁기<br>
+                                웃기 위해서 입니다.<br>
+                            </p>
+                        </div>
+                        <div class="conRight_link">
+                            <a href="#">I hate monday</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec_6">
+            <div class="sec6_tit_wrap">
+                <h2>COLLABORATION</h2>
+                <p>아이헤이트먼데이와 함께한 많은 브랜드들</p>
+            </div>
+            <div class="sec6_item_wrap">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="sec6_image">
+                                <img src="./img/sec6_1.jpg" alt="일리윤">
+                            </div>
+                            <div class="sec6_text">
+                                <p>Collabo with ILLIYOON</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="sec6_image">
+                                <img src="./img/sec6_2.jpg" alt="루나">
+                            </div>
+                            <div class="sec6_text">
+                                <p>Collabo with Luna</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="sec6_image">
+                                <img src="./img/sec6_3.jpg" alt="일리윤">
+                            </div>
+                            <div class="sec6_text">
+                                <p>Collabo with Slowlife Slowlive</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="sec6_image">
+                                <img src="./img/sec6_4.jpg" alt="폰코">
+                            </div>
+                            <div class="sec6_text">
+                                <p>Collabo with Fonco</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sec6_more">
+                <a href="#">게시물 더보기</a>
+            </div>
+        </section>
+        <section class="sec_7">
+            <div class="sec7_tit_wrap">
+                <h2>I hate monday TV</h2>
+                <p>아이헤이트먼데이의 다양한 소식을 유튜브로 만나보세요!</p>
+            </div>
+            <div class="sec7_video_wrap">
+                <iframe src="https://www.youtube.com/embed/-6LaMzkNoW0?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
     </main>
-    <footer id="footer"></footer>
+    <footer id="footer">
+        <ul>
+            <li>
+                <div class="f_tit">OFFICE/SHOWROOM</div>
+                <div class="f_text">
+                    <p>서울시 용산구 소월로 58,1F</p>
+                    <p><span>OFFICE</span> - 11:00 - 19:00 (주말 및 공휴일 휴무)</p>
+                    <p>SHOWROOM - 평일 12:00 - 19:00</p>
+                    <p>토요일 13:00-18:00 (일요일 휴무)</p>
+                    <p><span>SHOWROOM</span> -하절기 영업시간: (7월, 8월)</p>
+                    <p>평일 12:00 - 18:00 주말 및 공휴일 휴무</p>
+                </div>
+            </li>
+            <li>
+                <div class="f_tit">Company</div>
+                <div class="f_text">
+                    <p>상호 ihatemonday 대표 홍정미 사업자등록번호 127-40-42112</p>
+                    <p>통신판매업 신고 제2021-서울용산-1363 [사업자정보확인]</p>
+                    <p>전화 070-4028-1867 주소 서울특별시 용산구 소월로 58 (후암동) 1F</p>
+                    <p>개인정보관리책임자 홍정미 (monday.hong@gmail.com)</p>
+                </div>
+            </li>
+            <li>
+                <div class="f_tit">Bank</div>
+                <div class="f_text">
+                    <p>우리은행 1005 501 936577</p>
+                </div>
+            </li>
+            <li>
+                <div class="f_tit">C/S</div>
+                <div class="f_text">
+                    <div>
+                        <p>070-4028-1867</p>
+                        <p>가장 빠르고 정확한 문의</p>
+                        <p>카카오톡 플러스친구 : 아이헤이트먼데이</p>
+                    </div>
+                    <div class="f_icon">
+                        <div class="kakao">
+                            <a href="#"></a>
+                        </div>
+                        <div class="insta">
+                            <a href="https://www.instagram.com/ihatemondaysocks/"></a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="f_bar">
+            <span>입점 및 협업 관련 문의</span>
+            <span>monday.hong@gmail.com</span>
+            <span>홍정미 대표 010-9239-1867</span>
+        </div>
+    </footer>
 
 </div>
 </body>
